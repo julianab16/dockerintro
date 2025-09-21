@@ -1,4 +1,4 @@
-# 📘 README: *Cali Container City Lab (Extended)*
+# 📘 README: *Cali Container City Lab*
 
 ## 🎯 Objective
 In this lab, every student will design and **build their own Docker image**, publish it to **Docker Hub or GitHub Packages**, and then run a container from that image.  
