@@ -148,7 +148,10 @@ Verify that logs are being written:
 docker run --rm -v biblioteca-del-pueblo:/data alpine \
   sh -c "tail -n 20 /data/visitas.log"
 ```
-
+```bash
+##Command to check data in volume
+docker run --rm -it -v biblioteca:/data alpine sh
+```
 ---
 
 ## ✅ What you will learn
