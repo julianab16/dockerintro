@@ -22,7 +22,7 @@ EXPOSE 8080
 
 # Health check
 HEALTHCHECK --interval=10s --timeout=3s --retries=5 \
-  CMD wget -qO- http://localhost:8080/health >/dev/null || exit 1
+  CMD python3 -c "import sys, urllib.request; sys.exit(0) if urllib.request.urlopen('http://localhost:8080/health').status == 200 else sys.exit(1)"
 
 # Start the application
 CMD ["python", "/app/app.py"]
